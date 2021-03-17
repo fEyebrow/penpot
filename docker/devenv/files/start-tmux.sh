@@ -39,6 +39,6 @@ tmux send-keys -t penpot './scripts/start-dev' enter
 tmux rename-window -t penpot:0 'gulp'
 tmux select-window -t penpot:0
 tmux send-keys -t penpot 'cd penpot/frontend' enter C-l
-tmux send-keys -t penpot 'npx gulp --theme=${PENPOT_THEME} watch' enter
+tmux send-keys -t penpot 'npx gulp watch' enter
 
 tmux -2 attach-session -t penpot
